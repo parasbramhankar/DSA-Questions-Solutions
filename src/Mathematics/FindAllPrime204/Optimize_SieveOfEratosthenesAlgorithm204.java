@@ -1,9 +1,9 @@
-package Mathematics.FindAllPrime;
+package Mathematics.FindAllPrime204;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Optimize_SieveOfEratosthenesAlgorithm {
+public class Optimize_SieveOfEratosthenesAlgorithm204 {
 
 
     static void printPrime(int n){

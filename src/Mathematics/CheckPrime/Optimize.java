@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Optimize {
 
-    static boolean checkPrime(int n){
+    public static boolean checkPrime(int n){
 
         if(n<=1){
             return false;
