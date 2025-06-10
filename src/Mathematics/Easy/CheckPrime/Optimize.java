@@ -1,4 +1,4 @@
-package Mathematics.CheckPrime;
+package Mathematics.Easy.CheckPrime;
 
 import java.util.Scanner;
 

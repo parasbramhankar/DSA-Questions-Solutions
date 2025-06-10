@@ -1,4 +1,4 @@
-package Mathematics.Factorial.CountDigitInFactorial;
+package Mathematics.Easy.Factorial.CountDigitInFactorial;
 
 public class NaiveButInefficient {
 

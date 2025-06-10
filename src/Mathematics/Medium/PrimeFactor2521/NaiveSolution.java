@@ -1,7 +1,7 @@
-package Mathematics.PrimeFactor2521;
+package Mathematics.Medium.PrimeFactor2521;
 
 import java.util.Scanner;
-import Mathematics.CheckPrime.Optimize;
+import Mathematics.Easy.CheckPrime.Optimize;
 
 
 public class NaiveSolution {
