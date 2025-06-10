@@ -1,4 +1,4 @@
-package Mathematics.TrailingZeroes172;
+package Mathematics.Medium.TrailingZeroes172;
 
 import java.util.Scanner;
 

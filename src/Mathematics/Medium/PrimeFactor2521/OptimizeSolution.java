@@ -1,4 +1,4 @@
-package Mathematics.PrimeFactor2521;
+package Mathematics.Medium.PrimeFactor2521;
 
 
 //If we remove the multiple of the 2 and 3, we reduce the numbers of the iterations,
