@@ -2,25 +2,18 @@ package BitManipulation.Easy.LongestConsecutiveOnes;
 
 import java.util.Scanner;
 
-public class BruteForce {
+public class OptimizeSolution {
 
     static int function(int n){
+
         int count=0;
-        int max=Integer.MIN_VALUE;
-
         while(n>0){
+            count++;
 
-            if((n&1)==1){
-                count++;
-            }
-            else{
-                max=Math.max(max,count);
-                count=0;
-            }
-            n>>=1;
+            n=n&(n>>1);
         }
 
-        return Math.max(count, max);
+        return count;
     }
 
     public static void main(String[] args) {
