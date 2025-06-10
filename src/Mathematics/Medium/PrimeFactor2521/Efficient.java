@@ -1,4 +1,4 @@
-package Mathematics.PrimeFactor2521;
+package Mathematics.Medium.PrimeFactor2521;
 
 
 //Our Intuitions here is, each number is present as the multiple of two numbers,

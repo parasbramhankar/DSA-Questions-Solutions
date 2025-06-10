@@ -1,4 +1,4 @@
-package Mathematics.PrimeFactor2521;
+package Mathematics.Medium.PrimeFactor2521;
 
 /*
 Given an array of positive integers nums, return the number of distinct prime factors in the product of the elements of nums.

@@ -1,4 +1,4 @@
-package Mathematics.FindAllPrime204;
+package Mathematics.Medium.FindAllPrime204;
 
 import java.util.Scanner;
 
