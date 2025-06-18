@@ -1,4 +1,4 @@
-package BitManipulation.Easy.PowerSetString;
+package BitManipulation.Medium.PowerSet_String;
 
 import java.util.Arrays;
 import java.util.Scanner;
