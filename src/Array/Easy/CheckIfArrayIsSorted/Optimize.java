@@ -59,6 +59,19 @@ public class Optimize {
 
 */
 
+
+
+/*
+Approach:
+
+ * Check if the array has only one element or is empty, in which case it's considered sorted.
+ * Determine whether the array is supposed to be in ascending or descending order by comparing the first and last elements.
+ * Loop through the array from start to second last element.
+ * If the array is supposed to be ascending and any element is greater than the next, return false.
+ * If the array is supposed to be descending and any element is smaller than the next, return false.
+ * If the loop completes without returning false, return true indicating the array is sorted.
+ */
+
 public class Optimize {
 
     static boolean check(int[] arr) {

@@ -1,7 +1,16 @@
 package Array.Easy.FindTheUnion;
 
 import java.util.*;
+/*
+Approach:
 
+* Create an empty set to store unique elements
+* Loop through the first array and add each element to the set
+* Loop through the second array and add each element to the same set
+* Since sets do not allow duplicates, only unique elements from both arrays will be stored
+* Convert the set into a list and return it
+
+*/
 
 class Solution{
 

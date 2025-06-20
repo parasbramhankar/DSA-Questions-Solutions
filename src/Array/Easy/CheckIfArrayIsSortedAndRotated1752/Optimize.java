@@ -1,5 +1,19 @@
 package Array.Easy.CheckIfArrayIsSortedAndRotated1752;
 
+
+
+/*
+Approach:
+
+* Initialize a counter to zero
+* Get the length of the array
+* If the first element is less than the last element, assume it is in ascending order and increment the counter by one
+* Loop through the array from index 0 to n - 2
+* For every pair of adjacent elements, if the current element is greater than the next one, increment the counter
+* If the counter becomes greater than 1, return false, meaning the array is not sorted and rotated
+* If the loop completes and count is not greater than 1, return true, meaning the array is sorted and rotated at most once
+
+ */
 import java.util.Scanner;
 
 public class Optimize {

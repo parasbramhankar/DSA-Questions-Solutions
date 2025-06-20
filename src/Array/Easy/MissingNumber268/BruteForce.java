@@ -1,19 +1,19 @@
 package Array.Easy.MissingNumber268;
 
 /*
-Here is the approach and pseudocode for the given Java function
-that finds the missing number in an array containing numbers from `0` to `n` with one number missing:
+
+That finds the missing number in an array containing numbers from `0` to `n` with one number missing:
 ---
 Approach:
 
  1. The array `nums` contains `n` distinct numbers in the range `0` to `n`.
  2. The goal is to find the single missing number.
  3. For each number `i` from `0` to `n`:
-   a. Check if `i` exists in the array using a nested loop.
-   b. If `i` is not found, it is the missing number.
+    A. Check if `i` exists in the array using a nested loop.
+    B. If `i` is not found, it is the missing number.
  4. Return that number.
 
- Time complexity is O(n²) due to nested loops.
+Time complexity is O(n²) due to nested loops.
 ---
 Pseudocode:
 Function missingNumber(nums):
