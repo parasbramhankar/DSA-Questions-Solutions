@@ -36,7 +36,7 @@ import java.util.Scanner;
 
 public class UsingDP {
 
-    public List<List<Integer>> generate(int numRows) {
+    static public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> list = new ArrayList<>(); // Outer list to hold all rows
 
         // Loop to generate each row
