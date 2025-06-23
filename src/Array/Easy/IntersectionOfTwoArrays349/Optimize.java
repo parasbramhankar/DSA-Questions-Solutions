@@ -6,7 +6,7 @@ Approach:
 
 * Create a set and store all elements from the first array for constant time lookups
 * Create another set to store the intersection result without duplicates
-* Loop through the second array and if an element exists in the first set, add it to the result set
+* Loop through the second array, and if an element exists in the first set, add it to the result set
 * Convert the result set into an integer array
 * Return the final array containing the unique intersection elements
 
