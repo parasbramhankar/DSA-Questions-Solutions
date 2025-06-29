@@ -58,8 +58,7 @@ Final triplets:
 | Sorting            | O(n log n)                                |
 | Two-pointers per i | O(n)                                      |
 | Overall            | O(n²)                                     |
-| Space (output)     | O(k) → where k = number of valid triplets |
- */
+| Space (output)     | O(k) → where k = number of valid triplets | */
 import java.util.*;
 
 public class Optimize {
