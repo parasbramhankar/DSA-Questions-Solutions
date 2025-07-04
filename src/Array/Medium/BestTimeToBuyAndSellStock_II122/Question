@@ -34,3 +34,109 @@ Constraints:
 
 1 <= prices.length <= 3 * 104
 0 <= prices[i] <= 104
+===========================================================================================================
+Explanation:
+===========================================================================================================
+# Problem Explanation
+
+You are given an array `prices` where:
+
+* prices\[i] represents the price of the stock on the i-th day.
+
+You can:
+
+* Buy at most one share at a time (you cannot hold multiple shares).
+* You can buy and sell on the same day.
+* You can make as many transactions as you like, as long as you sell before buying again.
+
+Goal:
+
+* Maximize the total profit you can achieve.
+
+\=====================================================================================
+What’s allowed?
+
+* You can buy on one day and sell on a later day to make profit.
+* You can do this multiple times (buy, sell, buy, sell, ...), as long as you sell before buying again.
+* You can even buy and sell on the same day, though that usually doesn't add profit unless next price is higher.
+
+What’s not allowed?
+
+* You cannot hold more than one stock at a time.
+* You must sell before buying again.
+
+\=====================================================================================
+How does profit work?
+
+Whenever you buy at price x and sell later at price y,
+your profit is y - x.
+
+The goal is to sum up these individual profits from multiple transactions
+to get the maximum overall profit.
+
+\=====================================================================================
+Examples
+
+Example 1:
+
+Input: prices = \[7,1,5,3,6,4]
+
+Day 0: price = 7
+Day 1: price = 1 -> buy
+Day 2: price = 5 -> sell (profit = 5-1 = 4)
+Day 3: price = 3 -> buy
+Day 4: price = 6 -> sell (profit = 6-3 = 3)
+Day 5: price = 4
+
+Total profit = 4 + 3 = 7
+
+---
+
+Example 2:
+
+Input: prices = \[1,2,3,4,5]
+
+You could:
+
+* Buy on day 0 and sell on day 4 (profit = 5 - 1 = 4)
+
+Or you could break it down:
+
+* Buy on day 0, sell on day 1: profit = 2-1 = 1
+* Buy on day 1, sell on day 2: profit = 3-2 = 1
+* Buy on day 2, sell on day 3: profit = 4-3 = 1
+* Buy on day 3, sell on day 4: profit = 5-4 = 1
+
+Total profit = 1 + 1 + 1 + 1 = 4
+
+---
+
+Example 3:
+
+Input: prices = \[7,6,4,3,1]
+
+Prices are always dropping, so no profit can be made.
+
+Any buy-sell would give you sell - buy <= 0.
+
+Total profit = 0.
+
+\=====================================================================================
+Key Insight
+
+This problem is basically about capturing all the "uphill" climbs in the stock price.
+
+* If prices\[i+1] > prices\[i], you can make profit by buying on day i and selling on day i+1.
+* Adding up all these small profits gives the maximum total profit.
+
+So you want to accumulate all the little increases in prices.
+
+\=====================================================================================
+Summary
+
+* Buy and sell as many times as needed (as long as you sell before buying again).
+* Try to capture every rise in price, whether it’s over many days or consecutive days.
+* The final answer is the sum of all these profits.
+
+\=====================================================================================
+
