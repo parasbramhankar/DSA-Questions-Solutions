@@ -10,6 +10,8 @@ package String.Easy.ConsecutiveCharacters1446;
  3. Update the maximum length whenever a longer streak is found.
  4. Time complexity is O(n^2), not optimal but works for small strings.
 */
+
+
 public class BruteForce {
     public int maxPower(String s) {
         int max = 0;
