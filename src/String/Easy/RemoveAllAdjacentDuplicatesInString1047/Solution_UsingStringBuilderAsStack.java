@@ -1,4 +1,4 @@
-package String.Easy.RemoveAllAdje1047;
+package String.Easy.RemoveAllAdjacentDuplicatesInString1047;
 
 public class Solution_UsingStringBuilderAsStack {
         public String removeDuplicates(String s) {
