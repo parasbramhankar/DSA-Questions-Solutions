@@ -1,4 +1,4 @@
-package String.Easy.RemoveAllAdje1047;
+package String.Easy.RemoveAllAdjacentDuplicatesInString1047;
 
 import java.util.Stack;
 
