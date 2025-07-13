@@ -1,6 +1,5 @@
 package String.Medium.RepeatedStringMatch686;
 
-
 import java.util.HashSet;
 import java.util.Set;
 
