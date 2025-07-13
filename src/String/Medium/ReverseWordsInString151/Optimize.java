@@ -50,9 +50,7 @@ package String.Medium.ReverseWordsInString151;
 
 
 public class Optimize {
-    public class Solution {
-
-        // ✅ Main function to reverse words in a string
+        // Main function to reverse words in a string
         public static String reverseWords(String s) {
             // Step 1: Trim the input and remove extra spaces between words
             s = s.trim(); // remove leading and trailing spaces
@@ -67,7 +65,7 @@ public class Optimize {
             return sb.toString(); // Return final reversed sentence
         }
 
-        // ✅ Step 1: Remove extra spaces between words
+        //  Step 1: Remove extra spaces between words
         private static StringBuilder removeExtraSpaces(String s) {
             StringBuilder sb = new StringBuilder();
             boolean spaceFound = false;
@@ -85,7 +83,7 @@ public class Optimize {
             return sb; // Cleaned string without extra spaces
         }
 
-        // ✅ Step 2: Reverse characters from index `left` to `right`
+        //  Step 2: Reverse characters from index `left` to `right`
         private static void reverse(StringBuilder sb, int left, int right) {
             while (left < right) {
                 // Swap characters at left and right
@@ -95,7 +93,7 @@ public class Optimize {
             }
         }
 
-        // ✅ Step 3: Reverse each word in the reversed string
+        //  Step 3: Reverse each word in the reversed string
         private static void reverseEachWord(StringBuilder sb) {
             int n = sb.length();
             int start = 0;
@@ -109,12 +107,12 @@ public class Optimize {
             }
         }
 
-        // ✅ Test the function
+        // Test the function
         public static void main(String[] args) {
             String input = "  the   sky  is blue  ";
             String result = reverseWords(input);
             System.out.println("🔁 Reversed Words: " + result); // Output: "blue is sky the"
         }
-    }
+
 
 }
