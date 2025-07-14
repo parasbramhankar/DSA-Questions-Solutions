@@ -1,7 +1,6 @@
 package String.Easy.FindTheIndexOfTheFirstOccurrenceInAString28;
 
 public class OptimizeUsing_KMP_KnuthMorrisPratt {
-    public class Solution {
 
         // Main strStr() method using KMP algorithm
         public int strStr(String haystack, String needle) {
@@ -57,7 +56,7 @@ public class OptimizeUsing_KMP_KnuthMorrisPratt {
 
         // Main method for testing
         public static void main(String[] args) {
-            Solution sol = new Solution();
+            OptimizeUsing_KMP_KnuthMorrisPratt sol = new OptimizeUsing_KMP_KnuthMorrisPratt();
 
             System.out.println(sol.strStr("hello", "ll"));         // Output: 2
             System.out.println(sol.strStr("aaaaa", "bba"));        // Output: -1
@@ -66,4 +65,3 @@ public class OptimizeUsing_KMP_KnuthMorrisPratt {
         }
     }
 
-}
