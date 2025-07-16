@@ -1,6 +1,5 @@
 package LinkedList.SinglyLinkedList.Medium.DesignLinkedList707;
 
-
  class MyLinkedList {
 
     private class Node {
@@ -121,5 +120,3 @@ public class Solution {
         System.out.println();
     }
 }
-
-
