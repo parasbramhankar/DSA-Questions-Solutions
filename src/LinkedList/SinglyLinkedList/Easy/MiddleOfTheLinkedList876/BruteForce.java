@@ -16,7 +16,7 @@ package LinkedList.SinglyLinkedList.Easy.MiddleOfTheLinkedList876;
  * Mid represents the position of the middle node.
  *
  * Step 3: Reset a temp pointer back to the head and traverse the list by iteratively
- * moving temp mid number of times. The node pointed to by current after this traversal is the
+ * moving temp mid-number of times. The node pointed to by current after this traversal is the
  * middle node of the linked list.
  *
  * see: MiddleOfTheLinkedList876/BruteForce_Image 1.png
