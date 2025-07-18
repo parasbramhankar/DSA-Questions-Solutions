@@ -24,4 +24,28 @@ public class Solution {
         return slow;
     }
 
+    public static void main(String[] args) {
+
+        // Creating a sample linked list: 1 -> 2 -> 3 -> 4 -> 5
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+
+    //Solution of the Question
+        // Create an object of Solution and find the middle node
+        Solution sol = new Solution();
+        ListNode middle = sol.middleNode(head);
+
+
+        // Print from middle to end
+        System.out.print("Middle node and onward: ");
+        while (middle != null) {
+            System.out.print(middle.data + " ");
+            middle = middle.next;
+        }
+
+    }
+
 }
