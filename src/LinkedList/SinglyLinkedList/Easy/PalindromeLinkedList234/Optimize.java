@@ -58,7 +58,6 @@ public class Optimize {
 
         return true;
     }
-
     // 🧪 Test the code
     public static void main(String[] args) {
         // 🔢 Create the linked list: 1 → 2 → 2 → 1
