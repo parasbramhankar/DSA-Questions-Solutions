@@ -77,5 +77,20 @@ class BruteForce {
 
         return true;
     }
+
+    public static void main(String[] args) {
+    // 🔢 Create the linked list: 1 → 2 → 2 → 1
+       ListNode head = new ListNode(1,
+                        new ListNode(2,
+                                new ListNode(2,
+                                        new ListNode(1))));
+
+    // ✅ Create an object of Solution class and check for palindrome
+       BruteForce sol = new BruteForce();
+       boolean result = sol.isPalindrome(head);
+
+      // 🖨️ Output the result
+       System.out.println("Is the linked list a palindrome: ?\n" + result);
+    }
 }
 
