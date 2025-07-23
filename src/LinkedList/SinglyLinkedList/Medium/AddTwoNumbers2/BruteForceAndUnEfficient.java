@@ -13,7 +13,6 @@ public class BruteForceAndUnEfficient {
                 temp1=temp1.next;
                 p++;
             }
-
             p=0;
 
             ListNode temp2=l2;
