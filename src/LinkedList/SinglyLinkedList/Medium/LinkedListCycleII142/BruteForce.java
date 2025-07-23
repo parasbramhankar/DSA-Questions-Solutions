@@ -34,7 +34,6 @@ public class BruteForce {
         second.next = third;
         third.next = fourth;
         fourth.next = second; // Creating a cycle back to node with value 2
-
         ListNode result = detectCycle(head);
         if (result != null) {
             System.out.println("Cycle starts at node with value: " + result.data);
