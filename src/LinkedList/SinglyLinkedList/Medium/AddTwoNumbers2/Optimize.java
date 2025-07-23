@@ -118,7 +118,6 @@ public class Optimize {
         System.out.print("Result: ");
         printList(result);
     }
-
     // Helper method to print a linked list
     public static void printList(ListNode head) {
         ListNode temp = head;
