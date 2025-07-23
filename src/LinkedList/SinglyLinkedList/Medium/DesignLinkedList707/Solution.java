@@ -11,7 +11,6 @@ package LinkedList.SinglyLinkedList.Medium.DesignLinkedList707;
             this.data = data;
         }
     }
-
     private Node head;
     private int size;
 
@@ -87,7 +86,6 @@ public class Solution {
         // Add at head: [10]
         list.addAtHead(10);
         printList(list); // Expected: 10
-
         // Add at tail: [10, 20]
         list.addAtTail(20);
         printList(list); // Expected: 10 -> 20
