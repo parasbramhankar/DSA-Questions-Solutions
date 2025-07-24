@@ -55,3 +55,4 @@ public class Optimize {
         printLinkedList(result);  // Expected: 1 → 3 → 5 → 2 → 4
     }
 }
+
