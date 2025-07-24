@@ -22,7 +22,7 @@ public class Optimize {
 
         return head;
     }
-    // Helper: Convert array to linked list
+    // Helper: Convert an array to linked list
     public static ListNode createLinkedList(int[] arr) {
         ListNode dummy = new ListNode(0);
         ListNode current = dummy;
