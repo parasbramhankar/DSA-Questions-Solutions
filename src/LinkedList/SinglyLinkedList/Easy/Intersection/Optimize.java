@@ -36,6 +36,7 @@ public class Optimize {
         headA.next = new ListNode(7);
         headA.next.next = intersection;
 
+
         // Second list: 99 -> 1 -> 8 -> 10
         ListNode headB = new ListNode(99);
         headB.next = new ListNode(1);
