@@ -28,7 +28,6 @@ public class BruteForce {
 
         return newHead;
     }
-
     // Utility method to print the list
     static void printList(Node head) {
         Node temp = head;
@@ -38,7 +37,6 @@ public class BruteForce {
         }
         System.out.println();
     }
-
     // Utility method to create doubly linked list from array
     static Node createDLL(int[] arr) {
         if (arr.length == 0) return null;
@@ -55,8 +53,6 @@ public class BruteForce {
 
         return head;
     }
-
-
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 2, 4, 2, 5};
         int x = 2;
@@ -71,6 +67,5 @@ public class BruteForce {
         System.out.println("After Deletion");
         printList(result); // Reuse printList to display
     }
-
 
 }
