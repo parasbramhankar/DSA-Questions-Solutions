@@ -61,9 +61,14 @@ public class BruteForce {
         int[] arr = {1, 2, 3, 2, 4, 2, 5};
         int x = 2;
 
-        Node head = createDLL(arr); // You can reuse the createDLL from earlier
+        Node head = createDLL(arr);
+
+        System.out.println("Original List: ");
+        printList(head);// You can reuse the createDLL from earlier
+
         Node result = deleteAllOccurOfX(head, x);
 
+        System.out.println("After Deletion");
         printList(result); // Reuse printList to display
     }
 
