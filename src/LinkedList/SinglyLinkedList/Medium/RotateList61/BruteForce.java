@@ -74,6 +74,7 @@ public class BruteForce {
         return head;
     }
 
+
     public static void main(String[] args) {
         // Create linked list: 1 → 2 → 3 → 4 → 5
         ListNode head = new ListNode(1);
