@@ -115,6 +115,4 @@ package LinkedList.SinglyLinkedList.Medium.RemoveNthNodeFromEndofList19;
             display(head);
 
         }
-
-
 }
