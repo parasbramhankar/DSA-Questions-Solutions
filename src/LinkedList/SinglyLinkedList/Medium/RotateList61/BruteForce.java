@@ -47,8 +47,6 @@ Last node = 5 → new list: 5 → 1 → 2 → 3 → 4
 Second rotation:
 Last node = 4 → new list: 4 → 5 → 1 → 2 → 3
 */
-
-
 public class BruteForce {
 
     public ListNode rotateRight(ListNode head, int k) {
@@ -73,7 +71,6 @@ public class BruteForce {
 
         return head;
     }
-
 
     public static void main(String[] args) {
         // Create linked list: 1 → 2 → 3 → 4 → 5
