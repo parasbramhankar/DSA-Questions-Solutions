@@ -113,6 +113,5 @@ package LinkedList.SinglyLinkedList.Medium.RemoveNthNodeFromEndofList19;
 
             System.out.println("After removing the node:");
             display(head);
-
         }
 }
