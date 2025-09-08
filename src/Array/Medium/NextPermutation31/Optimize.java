@@ -2,7 +2,6 @@ package Array.Medium.NextPermutation31;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 /**
  * Beginner-friendly explanation of Next Permutation.
  * --------------------------------------------------
