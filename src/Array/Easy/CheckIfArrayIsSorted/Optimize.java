@@ -105,4 +105,3 @@ public class Optimize {
         System.out.println(check(arr) ? "Array is sorted" : "Not Sorted");
     }
 }
-
