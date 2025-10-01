@@ -164,8 +164,6 @@ public class Solution {
         System.out.println("\nReversed Linked List:");
         printList(reversedHead);
     }
-
-
 }
 
 
