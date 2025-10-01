@@ -52,7 +52,6 @@ class MergeSort {
         return sortedMerge(left, right);
     }
 
-
 // Main class to test the sorting
 
     public static void main(String[] args) {
