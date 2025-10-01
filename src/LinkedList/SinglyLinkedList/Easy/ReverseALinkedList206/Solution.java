@@ -166,5 +166,44 @@ public class Solution {
     }
 }
 
+/*
+     🔍 DRY RUN EXPLANATION FOR LIST: 1 -> 2 -> 3 -> 4 -> 5 -> null
+
+     Initial:
+     prev = null
+     curr = 1
+
+     Iteration 1:
+     next = 2
+     1.next = null   (reversing link)
+     prev = 1
+     curr = 2
+
+     Iteration 2:
+     next = 3
+     2.next = 1
+     prev = 2
+     curr = 3
+
+     Iteration 3:
+     next = 4
+     3.next = 2
+     prev = 3
+     curr = 4
+
+     Iteration 4:
+     next = 5
+     4.next = 3
+     prev = 4
+     curr = 5
+
+     Iteration 5:
+     next = null
+     5.next = 4
+     prev = 5
+     curr = null
+
+     Loop ends → return prev (which is now the new head: 5)
+     */
 
 
