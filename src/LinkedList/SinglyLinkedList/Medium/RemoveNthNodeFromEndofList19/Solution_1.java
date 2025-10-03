@@ -53,7 +53,6 @@ public class Solution_1 {
         return count;
     }
 
-
     static Node removeNthFromEnd(Node head, int n) {
 
         if (head == null) {
