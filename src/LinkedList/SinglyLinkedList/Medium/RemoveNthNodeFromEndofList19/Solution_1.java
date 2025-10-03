@@ -1,7 +1,6 @@
 package LinkedList.SinglyLinkedList.Medium.RemoveNthNodeFromEndofList19;
 
 
-import LinkedList.SinglyLinkedList.Easy.ReverseALinkedList206.Solution;
 
 public class Solution_1 {
 
