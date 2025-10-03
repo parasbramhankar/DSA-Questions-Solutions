@@ -15,7 +15,7 @@ public class BruteForceUsingTheArray {
         return length;
     }
 
-    static boolean checkPallindrome(int[] arr) {
+    static boolean checkPalindrome(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -40,7 +40,7 @@ public class BruteForceUsingTheArray {
             temp = temp.next;
             i++;
         }
-        return checkPallindrome(arr);
+        return checkPalindrome(arr);
     }
 
     public static void main(String[] args) {
