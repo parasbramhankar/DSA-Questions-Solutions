@@ -3,7 +3,7 @@ package LinkedList.SinglyLinkedList.Easy.PalindromeLinkedList234;
 
 public class Optimize {
 
-    // 🔁 Reverse the linked list
+    //  Reverse the linked list
     private ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
