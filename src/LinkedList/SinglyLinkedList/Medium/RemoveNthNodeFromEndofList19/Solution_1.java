@@ -5,26 +5,54 @@ import LinkedList.SinglyLinkedList.Easy.ReverseALinkedList206.Solution;
 
 public class Solution_1 {
 
-    static Node removeNthNodeFromLast(Node head,int n){
+
+    static int findTheLengthOfTheList(Node head){
         Node temp=head;
-        int size=0;
+        int count=0;
         while(temp!=null){
-            size++;
             temp=temp.next;
+            count++;
+        }
+        return count;
+    }
+
+
+    public Node removeNthFromEnd(Node head, int n) {
+
+        if (head == null) {
+            return null;
         }
 
-        temp=head;
-        if(n==size){
+        int length = findTheLengthOfTheList(head);
+
+        // If n is greater than the length, return head as is
+        if (length < n) {
+            return head;
+        }
+
+        // If the node to remove is the head node
+        if (length == n) {
             return head.next;
         }
 
-        for(int i=0;i<size-n-1;i++){
-            temp=temp.next;
-        }
-        temp.next=temp.next.next;
+        int rem = length - n; // position of the node before the target
 
+        Node temp = head;
+        // Move temp to the node just before the one to delete
+        for (int i = 1; i < rem; i++) {
+            temp = temp.next;
+        }
+
+        // Remove the nth node from the end
+        if (temp.next != null) {
+            temp.next = temp.next.next;
+        }
         return head;
     }
+
+
+
+
 
     public static void display(Node head) {
         while (head != null) {
