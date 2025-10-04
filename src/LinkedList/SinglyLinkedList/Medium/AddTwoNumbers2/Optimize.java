@@ -99,6 +99,46 @@ public class Optimize {
         return dummy.next;
     }
 
+/*  Another approach with same logic:
+
+    class Solution {
+        public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+            // Dummy node to act as the head of the result list
+            ListNode dummy = new ListNode(0);
+
+            // Current pointer to build the new list
+            ListNode current = dummy;
+
+            int carry = 0;
+
+            // Loop until both lists are exhausted and no carry remains
+
+            while (l1 != null || l2 != null || carry != 0) {
+
+                // Get values from the current nodes, or 0 if null
+                int val1 = (l1 != null) ? l1.val : 0;
+                int val2 = (l2 != null) ? l2.val : 0;
+
+                // Calculate sum and carry
+                int sum = val1 + val2 + carry;
+                carry = sum / 10;
+                int digit = sum % 10;
+
+                // Create a new node with the digit and attach
+                current.next = new ListNode(digit);
+                current = current.next;
+
+                // Move input pointers if possible
+                if (l1 != null) l1 = l1.next;
+                if (l2 != null) l2 = l2.next;
+            }
+
+            // Return the next of dummy node, which is actual head of the sum list
+            return dummy.next;
+        }
+    }
+*/
+
     public static void main(String[] args) {
         // Create first linked list: 2 → 4 → 3 (represents 342)
         ListNode l1 = new ListNode(2);
