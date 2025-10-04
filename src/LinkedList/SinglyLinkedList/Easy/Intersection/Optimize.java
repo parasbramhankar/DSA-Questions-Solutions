@@ -1,5 +1,37 @@
 package LinkedList.SinglyLinkedList.Easy.Intersection;
 
+
+
+/**
+ * Approach and Logic: Find Intersection of Two Linked Lists
+ *
+ * This solution uses the two-pointer technique to efficiently find the intersection node of two singly-linked lists, if one exists.
+ *
+ * Steps:
+ * 1. Initialize Two Pointers:
+ *    - Create two pointers, `pA` on `headA` and `pB` on `headB`, which will traverse both lists.
+ *
+ * 2. Traverse the Lists:
+ *    - Move both pointers one step at a time (`pA = pA.next`, `pB = pB.next`).
+ *    - When a pointer reaches the end of its list (`null`), redirect it to the head of the other list.
+ *    - This gives each pointer a chance to walk the total combined length of both lists, bringing them to the intersection if one exists.
+ *
+ * 3. Detect Intersection or End:
+ *    - The loop continues until `pA == pB`.
+ *    - If the linked lists intersect, both pointers will meet at the intersection node after at most `m + n` steps (where `m` and `n` are the lengths of lists).
+ *    - If not, both pointers will end up at `null` together, and there is no intersection.
+ *
+ * What makes this approach efficient:
+ * - No need to count lengths or use extra space.
+ * - O(m+n) time, O(1) space: Every node is visited at most twice, and only two pointers are used.
+ *
+ * Example:
+ * - List A: `1 -> 2 -> 3 -> 4 -> 5`
+ * - List B: `9 -> 4 -> 5` (intersect at node with value 4)
+ * - Pointers will synchronize at node 4 after traversing both lists.
+ */
+
+
 public class Optimize {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode pointerA = headA; // Initialize pointer A to the head of list A. It's one of our runners.
