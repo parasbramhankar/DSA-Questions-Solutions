@@ -20,7 +20,6 @@ public class Optimize_SieveOfEratosthenesAlgorithm204 {
                 }
 
             }
-
         }
 
         int count=0;
