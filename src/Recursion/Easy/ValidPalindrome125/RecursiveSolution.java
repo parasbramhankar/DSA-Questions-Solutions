@@ -16,10 +16,10 @@ public class RecursiveSolution {
                 return true;
             }
 
-            while(start<end && !Character.isLetterOrDigit(s.charAt(start))){
+            while(!Character.isLetterOrDigit(s.charAt(start))){
                 start++;
             }
-            while(start<end && !Character.isLetterOrDigit(s.charAt(end))){
+            while(!Character.isLetterOrDigit(s.charAt(end))){
                 end--;
             }
 
