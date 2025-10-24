@@ -127,3 +127,43 @@ public class Optimize {
         }
     }
 }
+
+/**
+ * Approach and Logic: Rotating a Linked List to the Right
+ *
+ * This function rotates a singly linked list to the right by k places.
+ *
+ * Step-by-step logic:
+ * 1. Edge Cases:
+ *    - If the list is empty, has one node, or k == 0, no rotation is needed.
+ *    - Simply return the original head.
+ *
+ * 2. Length Calculation:
+ *    - Traverse the list to determine its length (count) and reach the last node (temp).
+ *    - This helps in determining where to break and reconnect the list during rotation.
+ *
+ * 3. Circular Linking:
+ *    - Connect the last node’s next pointer to the head, forming a circular linked list.
+ *    - This makes it easier to perform rotation as we can loop around the list.
+ *
+ * 4. Adjust k:
+ *    - Since rotating by a multiple of the list’s length yields the same list,
+ *      set k = k % count.
+ *    - Determine how many steps to move to find the new head by using:
+ *      stepsToNewHead = count - k.
+ *
+ * 5. Locating the New Head:
+ *    - Traverse (stepsToNewHead - 1) nodes starting from the head.
+ *    - The node right after this will be the new head after rotation.
+ *
+ * 6. Breaking the Circle:
+ *    - Set the new head as temp.next.
+ *    - Break the circular link by setting temp.next = null.
+ *
+ * Efficiency:
+ * - Time Complexity: O(n), since we traverse the list twice.
+ * - Space Complexity: O(1), as we use only a few pointers.
+ *
+ * Returns:
+ * - The head of the rotated linked list after performing k rotations to the right.
+ */
