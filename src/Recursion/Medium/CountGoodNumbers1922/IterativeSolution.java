@@ -99,7 +99,6 @@ public class IterativeSolution {
         // multiply under modulo
         return (int) ((evenPower * oddPower) % MOD);
     }
-
     /**
      * Computes (num ^ expo) % MOD using recursive fast exponentiation.
      *
