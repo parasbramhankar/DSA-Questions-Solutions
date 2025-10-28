@@ -105,4 +105,17 @@ public class OptimizeSolution {
     }
 
 }
+/**
+ Dry run for k = 1:
+ kthCharacter(1)
+ => returns 'a'
+*/
+
+/*
+ Dry run for k = 5:
+ Step 1: pow2 = 1, then pow2 = 2, then pow2 = 4 (since 4*2=8 > 5)
+ correspondingPos = 5 - 4 = 1
+ kthCharacter(1) returns 'a', so we shift 'a' by 1: 'b'
+ kthCharacter(5) returns (char)('a' + 1) => 'b'
+ */
 
