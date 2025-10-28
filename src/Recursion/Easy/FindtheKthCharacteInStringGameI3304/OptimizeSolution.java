@@ -119,3 +119,14 @@ public class OptimizeSolution {
  kthCharacter(5) returns (char)('a' + 1) => 'b'
  */
 
+/**
+ Dry run for k = 10:
+ pow2 grows: 1 -> 2 -> 4 -> 8 (8*2=16 > 10), so pow2 = 8
+ correspondingPos = 10 - 8 = 2
+ Now, kthCharacter(2):
+   pow2 = 1 (since 1*2=2 < 2)
+   correspondingPos = 2 - 1 = 1
+   kthCharacter(1) = 'a'
+   kthCharacter(2) = (char)('a' + 1) = 'b'
+ Then, kthCharacter(10) = (char)('b' + 1) = 'c'
+ */
