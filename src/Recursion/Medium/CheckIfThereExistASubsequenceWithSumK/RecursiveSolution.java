@@ -25,10 +25,8 @@ public class RecursiveSolution {
         int n=arr.length;
         int sum=0;
 
-
         return helper(arr, k, ind,sum);
     }
-
     public static void main(String[] args) {
       int[]arr=new int[]{1,2,3,4};
       int k=3;
