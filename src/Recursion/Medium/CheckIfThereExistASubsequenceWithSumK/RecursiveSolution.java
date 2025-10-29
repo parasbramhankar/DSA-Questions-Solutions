@@ -20,9 +20,14 @@ public class RecursiveSolution {
         }
         return false;
     }
+    static boolean function(int []arr){
+
+    }
 
     public static void main(String[] args) {
-      int[]arr=new int[]{};
-      
+      int[]arr=new int[]{1,2,3,4};
+
+      boolean check=function(arr);
+
     }
 }
