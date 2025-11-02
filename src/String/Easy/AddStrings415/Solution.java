@@ -8,8 +8,6 @@ public class Solution {
 
         int len1=num1.length();
         int len2=num2.length();
-
-
         int carry=0;
         int ind=0;
         StringBuilder stringBuilder=new StringBuilder("");
