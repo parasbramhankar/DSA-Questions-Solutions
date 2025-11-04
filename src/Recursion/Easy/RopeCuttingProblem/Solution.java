@@ -6,7 +6,7 @@ import java.util.Scanner;
  * using only cuts of lengths 'a', 'b', and 'c'.
  *
  * Approach:
- * --------------------------------------------------------
+ * -----------------------------------------------------------------------
  * The function uses recursion to explore all possible ways to cut the rope.
  *
  * Logic:
@@ -173,7 +173,7 @@ Try cutting by 2:
     
     Try cutting by 2:
     - Call function(-1, 2, 5, 1) → n<0 → return -1
-    
+
     Try cutting by 5:
     - Call function(-4, 2, 5, 1) → n<0 → return -1
     
@@ -181,11 +181,11 @@ Try cutting by 2:
     - Call function(0, 2, 5, 1) → n==0 → return 0
     
     Results for function(1): max(-1, -1, 0) = 0 → Add 1 → return 1
-  
-  Try cutting by 5:
+
+ Try cutting by 5:
   - Call function(-2, 2, 5, 1) → n<0 → return -1
-  
-  Try cutting by 1:
+
+ Try cutting by 1:
   - Call function(2, 2, 5, 1)
     - Check base cases: proceed.
 
