@@ -40,7 +40,6 @@ import java.util.Scanner;
  *
  */
 
-
 public class Solution {
     static int function(int n,int a,int b,int c){
         if(n==0){
