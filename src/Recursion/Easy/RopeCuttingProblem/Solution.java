@@ -2,6 +2,7 @@ package Recursion.Easy.RopeCuttingProblem;
 
 import java.util.Scanner;
 /**
+ *
  * Calculates the maximum number of pieces a rope of length 'n' can be cut into
  * using only cuts of lengths 'a', 'b', and 'c'.
  *
