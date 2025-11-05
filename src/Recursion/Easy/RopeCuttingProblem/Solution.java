@@ -39,7 +39,6 @@ import java.util.Scanner;
  * - It can be optimized using dynamic programming or memoization.
  *
  */
-
 public class Solution {
     static int function(int n,int a,int b,int c){
         if(n==0){
