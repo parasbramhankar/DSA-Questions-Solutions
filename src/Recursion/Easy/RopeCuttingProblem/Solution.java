@@ -11,6 +11,7 @@ import java.util.Scanner;
  * The function uses recursion to explore all possible ways to cut the rope.
  *
  * Logic:
+ * -----------------------
  * 1. Base Case:
  *    - When the rope length 'n' is exactly 0, no cuts are needed, so return 0.
  *    - When 'n' becomes negative, it means the current cutting path is invalid, return -1.
