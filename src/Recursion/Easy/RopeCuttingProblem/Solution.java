@@ -227,5 +227,4 @@ Final answer: 5 cuts
 This traverses all cut possibilities, with recursive calls branching for each allowed cut length, recursing until base cases and bubbling maximum cuts back up.
 
 This detailed call flow clarifies how recursion explores all possibilities systematically until a final solution emerges.
-
  */
