@@ -90,5 +90,4 @@ This approach makes push operation $$O(n)$$ (due to rotation) while pop and top 
 
 This explanation corresponds fully to the provided code logic.
 
-
 Link: https://takeuforward.org/data-structure/implement-stack-using-single-queue/
