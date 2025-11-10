@@ -1,0 +1,94 @@
+Explanation of the code logic and approach in point form, with a step-by-step dry run example:
+
+- The class `Stack` uses one queue (`ArrayDeque` implementing `Queue<Integer>`) to simulate a stack.
+- A stack is LIFO (Last In First Out), but a queue is FIFO (First In First Out), so to simulate stack behavior, the queue is manipulated such that the most recently added element is always at the front of the queue.
+
+Push logic:
+- When pushing a new value `val`, first get the current size of the queue (number of elements).
+- Add the new element `val` to the queue.
+- Then, rotate the existing elements (the previous `size` of elements) by removing the element at the front (peek + remove) and adding it to the back repeatedly.
+- This rotation ensures that the newly added element moves to the front of the queue, simulating stack’s top.
+
+Pop logic:
+- If the queue is empty, return -1 for underflow.
+- Otherwise, remove and return the front element of the queue (the most recently added one due to the push rotation).
+
+Top logic:
+- If the queue is empty, return -1.
+- Otherwise, return the front element of the queue without removing it.
+
+IsEmpty:
+- Returns whether the queue is empty.
+
+Display:
+- Prints the queue as a string.
+
+=======================================================================================================
+
+Dry run example with pushes and pops:
+
+Start empty:
+queue = []
+
+Push 10:
+- size = 0
+- add 10 → queue =[10]
+- rotate 0 times (no rotation)
+queue =[10]
+
+Push 20:
+- size = 1
+- add 20 → queue =[10]
+- rotate 1 time:
+  - remove front (10), add to back → queue =[10]
+Now front is 20 (top of stack)
+
+Push 30:
+- size = 2
+- add 30 → queue =[10]
+- rotate 2 times:
+  - remove front (20), add to back → queue =[10]
+  - remove front (10), add to back → queue =[10]
+Now front is 30 (top of stack)
+
+Push 40:
+- size = 3
+- add 40 → queue =[10]
+- rotate 3 times:
+  - remove front (30), add to back → queue =[10]
+  - remove front (20), add to back → queue =[10]
+  - remove front (10), add to back → queue =[10]
+Now front is 40 (top of stack)
+
+Push 50:
+- size = 4
+- add 50 → queue =[10]
+- rotate 4 times:
+  - remove front (40), add to back → queue =[10]
+  - remove front (30), add to back → queue =[10]
+  - remove front (20), add to back → queue =[10]
+  - remove front (10), add to back → queue =[10]
+Now front is 50 (top of stack)
+
+--------------------------------------------------------------------------------------------
+
+Pop operation:
+- Removes and returns the front element.
+- Pop once: removes 50 → remaining queue =[10]
+- Pop again: removes 40 → remaining queue =[10]
+
+After these two pops, the top element is now 30.
+
+--------------------------------------------------------------------------------------------
+
+Summary:
+- Push adds an element and rotates the queue to bring the new element to the front.
+- Pop and top operate on the front element of the queue.
+- This simulates the LIFO behavior of a stack using a single queue by reordering elements on each push.
+
+This approach makes push operation $$O(n)$$ (due to rotation) while pop and top are $$O(1)$$ operations.
+
+This explanation corresponds fully to the provided code logic.
+
+
+Link: https://takeuforward.org/data-structure/implement-stack-using-single-queue/
