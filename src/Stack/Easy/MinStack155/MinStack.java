@@ -84,6 +84,7 @@ class MinStack {
      * -------------------------------------------------------------------------
      */
 
+
     Stack<Integer> stack;
     Stack<Integer> minStack;
 
