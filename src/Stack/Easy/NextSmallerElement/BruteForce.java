@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class BruteForce {
    public static int[] nextSmallerEle(int[] arr) {
-        // code here
         int n=arr.length;
         int[]result=new int[n];
         Arrays.fill(result,-1);
