@@ -1,5 +1,5 @@
 Next Smaller Element
-Difficulty: MediumAccuracy: 36.26%Submissions: 209K+Points: 4Average Time: 20m
+
 You are given an integer array arr[ ]. For every element in the array, your task is to determine its Next Smaller Element (NSE).
 
 
