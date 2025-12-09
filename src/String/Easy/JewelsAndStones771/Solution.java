@@ -24,3 +24,4 @@ public class Solution {
         System.out.println("The stones you have are also jewels: "+count);
     }
 }
+
