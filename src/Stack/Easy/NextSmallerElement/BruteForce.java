@@ -28,3 +28,4 @@ public class BruteForce {
         System.out.println(Arrays.toString(result));
     }
 }
+
