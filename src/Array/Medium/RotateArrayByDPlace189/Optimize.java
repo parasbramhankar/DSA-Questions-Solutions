@@ -1,6 +1,6 @@
 package Array.Medium.RotateArrayByDPlace189;
 /*
-Question: Given an integer array nums, rotate the array to the right by k steps,
+Question 74: Given an integer array nums, rotate the array to the right by k steps,
           where k is non-negative.
 
 * The function rotates the array to the right by k positions using the reversal algorithm

@@ -61,7 +61,7 @@ public class OptimalSolution {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-    //Solution of the Question
+    //Solution of the Question 74
         // Create an object of Solution and find the middle node
         OptimalSolution sol = new OptimalSolution();
         ListNode middle = sol.middleNode(head);
